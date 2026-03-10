@@ -10,9 +10,9 @@ import instaloader
 # ENVIRONMENT VARIABLES
 # ==============================
 
-BOT_TOKEN = os.environ["8707781362:AAEP0BV35V52tb5jXr-kBJUMTW4vcPA9pFU"]
-CHAT_ID = os.environ["1050884051"]
-GOOGLE_API_KEY = os.environ["AIzaSyCmBEwcl-bP5s_XdGt2O_ZuMT70RG4p8Nw"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+CHAT_ID = os.environ["CHAT_ID"]
+GOOGLE_API_KEY = os.environ["GOOGLE_API_KEY"]
 
 # Google service account JSON stored as environment variable
 SERVICE_ACCOUNT = json.loads(os.environ["GOOGLE_SERVICE_ACCOUNT"])
@@ -259,5 +259,6 @@ message+=gst_search()
 message+=instagram_scan()
 
 send_telegram(message)
+
 
 print("Radar completed")
