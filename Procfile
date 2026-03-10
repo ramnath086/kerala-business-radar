@@ -1,0 +1,1 @@
+worker: python kerala_business_autobot.py
